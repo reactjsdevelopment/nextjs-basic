@@ -1,15 +1,14 @@
-// components/Header.jsx
 import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header className="bg-gray-900 text-white py-4 shadow-lg"> {/* Updated background color */}
+        <header className="bg-gray-900 text-white py-4 shadow-lg"> 
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-3xl font-bold">MyApp</h1> {/* Increased font size for better visibility */}
+                <h1 className="text-3xl font-bold">MyApp</h1>
                 <nav>
-                    <ul className="flex space-x-6"> {/* Increased spacing between links */}
+                    <ul className="flex space-x-6"> 
                         <li>
-                            <Link href="/" className="hover:text-indigo-400">Home</Link> {/* Added hover effect */}
+                            <Link href="/" className="hover:text-indigo-400">Home</Link> 
                         </li>
                         <li>
                             <Link href="/signin" className="hover:text-indigo-400">Sign In</Link>

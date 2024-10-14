@@ -127,7 +127,6 @@ if (youEnjoyed) {
 ```
 ---------
 happy coding fellas!!💕✨
-thank You
 -----------
  
 

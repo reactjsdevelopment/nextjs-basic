@@ -47,14 +47,14 @@ export default function Layout({ children, home }) {
         ) : (
           <>
             <Link href="/" legacyBehavior> {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
-                {/* <Image
+                <Image
                   priority
                   src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
                   alt=""
-                /> */}
+                />
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" legacyBehavior className={utilStyles.colorInherit}>{name} {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}

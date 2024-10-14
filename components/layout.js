@@ -46,8 +46,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
+            <Link href="/" legacyBehavior> {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
                 <Image
                   priority
                   src="/images/profile.jpg"
@@ -56,11 +55,9 @@ export default function Layout({ children, home }) {
                   width={108}
                   alt=""
                 />
-              </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+              <Link href="/" legacyBehavior className={utilStyles.colorInherit}>{name} {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
               </Link>
             </h2>
           </>
@@ -69,9 +66,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          <Link href="/" legacyBehavior>← Back to home</Link> {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
         </div>
       )}
     </div>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -25,9 +29,6 @@ img {
   max-width: 100%;
   display: block;
 }
-
-
-/* globals.css */
 
 body.light {
   background-color: #ffffff;

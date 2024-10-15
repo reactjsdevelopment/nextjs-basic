@@ -25,3 +25,21 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+/* globals.css */
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.themeToggle {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}

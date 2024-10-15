@@ -15,3 +15,31 @@
   .backToHome {
     margin: 3rem 0 0;
   }
+
+  .dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  /* Estilos comunes para el botón */
+.themeToggle {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Estilos para el tema claro */
+.light .themeToggle {
+  background-color: #e0e0e0; /* Fondo gris claro */
+  color: #000000; /* Texto negro */
+}
+
+/* Estilos para el tema oscuro */
+.dark .themeToggle {
+  background-color: #333333; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+

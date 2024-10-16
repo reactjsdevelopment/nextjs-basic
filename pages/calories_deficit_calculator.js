@@ -15,7 +15,6 @@ const CaloriesDeficitCalculator = () => {
     });
 
     function handleInput(value, type){
-        
         const numericFields = ["age", "height", "weight"];
         // Set input value
         setHealthMetrics((prevState)=>{

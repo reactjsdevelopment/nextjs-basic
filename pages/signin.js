@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 
 const SignIn = () => {
+  
   return (
     <div className="flex flex-col min-h-screen bg-gray-800"> 
       <Head>

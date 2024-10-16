@@ -23,8 +23,39 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 Simple nextjs app to demo features. 
 
 ### useful links in project
-http://localhost:3000/posts/first-post
-http://localhost:3000/api/hello
+# Project Name
+
+## Overview
+This is a brief description of the project, including its purpose and key features.
+
+## Routes
+Below are the key routes available in the application:
+
+- **Homepage/Post Page:**  
+  Accessible via: [http://localhost:3000/posts/first-post](http://localhost:3000/posts/first-post)  
+  This route displays the content of the first post.
+
+- **API Endpoint (Hello):**  
+  Accessible via: [http://localhost:3000/api/hello](http://localhost:3000/api/hello)  
+  This route returns a sample message from the API.
+
+- **Signup Page:**  
+  Accessible via: [http://localhost:3000/signup](http://localhost:3000/signup)  
+  This route provides the signup form for new users.
+
+- **Signin Page:**  
+  Accessible via: [http://localhost:3000/signin](http://localhost:3000/signin)  
+  This route provides the signin form for existing users.
+
+## How to Run
+1. Install the dependencies:
+   ```bash
+   npm install
+
+2. Start the deployment server :
+   ```bash
+    npm run dev
+
 
 ## Subscribe and Stay Updated!
 

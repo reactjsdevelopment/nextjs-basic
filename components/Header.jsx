@@ -16,6 +16,9 @@ const Header = () => {
                         <li>
                             <Link href="/signup" className="hover:text-indigo-400">Sign Up</Link>
                         </li>
+                        <li>
+                            <Link href="/calories_deficit_calculator" className="hover:text-indigo-400">Calories Deficit Calculator</Link> 
+                        </li>
                     </ul>
                 </nav>
             </div>

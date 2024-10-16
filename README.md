@@ -56,7 +56,6 @@ Below are the key routes available in the application:
    ```bash
     npm run dev
 
-
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!

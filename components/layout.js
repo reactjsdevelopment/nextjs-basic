@@ -4,6 +4,7 @@
 //     return <div className={styles.container}>{children}</div>;
 //   }
 
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/layout.module.css';
@@ -14,8 +15,23 @@ const name = 'Your Name';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+  
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${theme === 'dark' ? styles.dark : ''}`}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,6 +47,11 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <div>
+        <button onClick={toggleTheme} className={styles.themeToggle}>
+          {theme === 'light' ? '🌙 Modo Oscuro' : '☀️ Modo Claro'}
+        </button>
+      </div>
       <header className={styles.header}>
         {home ? (
           <>

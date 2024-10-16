@@ -1,7 +1,6 @@
 // pages/signin.js
 import Head from 'next/head';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const SignIn = () => {
   
@@ -54,7 +53,6 @@ const SignIn = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

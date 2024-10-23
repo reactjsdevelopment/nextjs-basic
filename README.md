@@ -56,6 +56,26 @@ Below are the key routes available in the application:
    ```bash
     npm run dev
 
+### Run using Docker
+
+1. Requirements
+- Docker
+
+2. Getting Started
+
+- Clone the repository:
+   ```bash
+   git clone https://github.com/reactjsdevelopment/nextjs-basic.git
+   cd nextjs-basic
+   ```
+
+- run cmd
+  ```bash
+  docker-compose up
+  ```
+
+- check `localhost:3000`
+
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!

@@ -3,16 +3,35 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "postcss": "^8.4.47",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sweetalert2": "^11.14.3",
     "tailwindcss": "^3.4.13"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-interactions": "^8.4.4",
+    "@storybook/addon-onboarding": "^8.4.4",
+    "@storybook/blocks": "^8.4.4",
+    "@storybook/nextjs": "^8.4.4",
+    "@storybook/react": "^8.4.4",
+    "@storybook/test": "^8.4.4",
+    "@types/react": "18.3.12",
+    "storybook": "^8.4.4",
+    "typescript": "5.6.3"
+  },
+  "resolutions": {
+    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
   }
 }

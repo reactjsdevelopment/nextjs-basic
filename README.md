@@ -18,17 +18,44 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 - **[ Git & GitHub ]**: [GitHub is where over 100 million developers shape the future of software together. Contribute to the open-source community and manage Git repositories. This practical guide gets you to jump right into using GitHub, learning the basics of Git. Git and GitHub are two of the most essential tools in the world of software development.]
 - **[ Video Conferencing Tool ]**: [Unlock the potential of video conferencing software development. Dive into our guide for insights on key features and cost factors.  If you're looking to integrate video communication into your app or planning to build a video streaming/conference app from scratch, create a fully customized audio & video conferencing app.]
 
-
 ### About the app
-Simple nextjs app to demo features. 
+
+Simple nextjs app to demo features.
 
 ### useful links in project
-# Project Name
 
+<http://localhost:3000/> API return full html
+
+## Project Name
+Integrating Next.js with Storybook
+npx sb init --builder webpack5
+Before you run your stories, you need to tweak .eslintrc.json to allow it to read Storybook as a plugin:
+
+{
+  "extends": [
+    "plugin:storybook/recommended",
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
+  "globals": {
+    "React": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"]
+    }
+  ],
+  "rules": {
+    "no-unused-vars": "warn"
+  }
+}
 ## Overview
+
 This is a brief description of the project, including its purpose and key features.
 
 ## Routes
+
 Below are the key routes available in the application:
 
 - **Homepage/Post Page:**  
@@ -38,7 +65,7 @@ Below are the key routes available in the application:
 - **API Endpoint (Hello):**  
   Accessible via: [http://localhost:3000/api/hello](http://localhost:3000/api/hello)  
   This route returns a sample message from the API.
-
+http://localhost:3000/api/user/1
 - **Signup Page:**  
   Accessible via: [http://localhost:3000/signup](http://localhost:3000/signup)  
   This route provides the signup form for new users.
@@ -48,35 +75,43 @@ Below are the key routes available in the application:
   This route provides the signin form for existing users.
 
 ## How to Run
+
 1. Install the dependencies:
+
    ```bash
    npm install
 
 2. Start the deployment server :
+
    ```bash
     npm run dev
 
 ### Run using Docker
 
 1. Requirements
-- Docker
+
+   ```text
+   Docker
+   ```
 
 2. Getting Started
 
 - Clone the repository:
+
    ```bash
    git clone https://github.com/reactjsdevelopment/nextjs-basic.git
    cd nextjs-basic
    ```
 
 - run cmd
+
   ```bash
   docker-compose up
   ```
 
 - check `localhost:3000`
 
-## Subscribe and Stay Updated!
+## Subscribe and Stay Updated
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
 
@@ -98,40 +133,53 @@ This project is licensed under the MIT License.
 
 If you have any questions or need further assistance, feel free to ask! 🚀
 
-##  Steps to contribute and generate PR(pull request)
+## Steps to contribute and generate PR(pull request)
 
- ###  clone the repository
+### clone the repository
+
 clone the forked repository to your system. Go to your GitHub account, open the forked repository, click on the code button and then clone the repository.
 If you want to use the terminal, use the following commands after you fork the repository, open the terminal type the given command
-```
+
+```git
 git clone repo url
 ```
+
 ### create a branch
+
  create a branch on your local repository to solve a problem.
 
 Terminal commands
-```
+
+```git
 git checkout -b your_new_branch_name
-```   
-###   add & commit
+```
+
+### add & commit
+
 add your changes(folder) to that branch.
 Make necessary changes and commit those changes. Terminal commands
-```
+
+```git
 git add .
 git commit -m "your-commit-message"
 ```
+
 ### push changes to github
+
 finally, push your local repository to the remote repository compare & submit a pull request
 
 terminal commands
-```
+
+```git
 git push origin 
 ```
+
 Go to your repository on GitHub, you'll see a compare & pull request button. Click on that button.
 
 Now submit the pull request.
-   
+
 For quick approval of the pull request, reach out to me on the mentioned social media channels.
+
 ```bash
 
 
@@ -165,7 +213,9 @@ ______      _               _   _               _
 
 
 ```
----------
+
+---
+
 ```javascript
 
 if (youEnjoyed) {
@@ -175,9 +225,79 @@ if (youEnjoyed) {
 }
 
 ```
----------
-happy coding fellas!!💕✨
------------
- 
 
+---
 
+## Happy coding fellas!!💕✨
+
+---
+
+components
+lib
+pages -  for routing purposes
+layouts
+services
+utils
+assets
+hooks
+App Folder - You can handle all the page and API routes within this folder.
+src folder
+
+All the non-routes folders will be Private Folders by prefixing their name with an underscore  _components, _libs
+
+src
+| app
+| | page.tsx
+| | layout.tsx
+| | (auth)
+| | | sign-in.tsx
+| | | sign-up.tsx
+| | profile
+| | | page.tsx
+| | | orders
+| | | | page.tsx
+| | api
+| | | order
+| | | | route.ts
+| | | etc
+| components
+| | ui
+| | | Footer.tsx
+| | | header.tsx
+| | | layout.tsx - kind of index.html
+| | | navbar.tsx
+| | | profile.tsx
+| | | signin.tsx
+| | | signup.tsx
+| | profile
+| | | profileImage.tsx
+| | orders
+| | | order.tsx
+| hooks
+| | useAuth.ts
+| | useCart.ts
+| lib
+| | posts.js
+| | | common methods
+| public
+| pages -> homepage -> The Pages Router has a file-system based router built on concepts of pages. When a file is added to the pages directory it's automatically available as a route. 
+| | posts
+| | api
+| | | | hello.js
+| | | first-post
+| | tailwind
+| | _app -> define the global layout -> Custom App
+| | _document -> to control the initial response from the server -> Custom Document
+| | calculator -> another calorie route
+| | signin -> another  route
+| | signup -> another  route
+_error	.js .jsx .tsx	Custom Error Page
+404	.js .jsx .tsx	404 Error Page
+500	.js .jsx .tsx	500 Error Page
+
+http://localhost:3000/tailwind 
+The router will automatically route files named index to the root of the directory.
+
+Layout Pattern ->  The React model allows us to deconstruct a page into a series of components. Many of these components are often reused between pages. For example, you might have the same navigation bar and footer on every page.   <main>{children}</main>
+https://blog.logrocket.com/structure-scalable-next-js-project-architecture/
+https://nextjs.org/docs/pages/building-your-application/routing/custom-app

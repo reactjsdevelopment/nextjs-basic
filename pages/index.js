@@ -220,7 +220,6 @@
 
 import Head from 'next/head';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -232,7 +231,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center bg-gray-900 text-white">
         <h1 className="text-5xl font-bold mb-6">Welcome to MyApp</h1>
-        <p className="text-lg">This is a simple homepage built with Next.js.</p>
+        <p className="text-lg">This is a simple page built with Next.js.</p>
         <div className="mt-8">
           <a
             href="/signup"

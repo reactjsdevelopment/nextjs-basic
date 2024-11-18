@@ -1,9 +1,3 @@
-// import styles from '../styles/layout.module.css';
-
-// export default function Layout({ children }) {
-//     return <div className={styles.container}>{children}</div>;
-//   }
-
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -11,8 +5,8 @@ import styles from '../styles/layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Your Name';
-export const siteTitle = 'Next.js Sample Website';
+const name = 'code for web';
+export const siteTitle = 'Next.js Website';
 
 export default function Layout({ children, home }) {
   const [theme, setTheme] = useState('light');
@@ -67,10 +61,10 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/" legacyBehavior> {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
+            <Link href="/" legacyBehavior> 
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/0_Wkrz5TuOxQs9tXri.webp"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
@@ -78,16 +72,16 @@ export default function Layout({ children, home }) {
                 />
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/" legacyBehavior className={utilStyles.colorInherit}>{name} {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
-              </Link>
+              <Link href="/" legacyBehavior className={utilStyles.colorInherit}>{name}</Link>
             </h2>
           </>
         )}
       </header>
       <main>{children}</main>
+    
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/" legacyBehavior>← Back to home</Link> {/*needed to add legacy behavior because of nested a tag inside link tag causing error */}
+          <Link href="/" legacyBehavior>← Back to home</Link> 
         </div>
       )}
     </div>

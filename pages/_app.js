@@ -14,10 +14,10 @@ export default function App({ Component, pageProps, example }) {
   );
 }
   
-MyApp.getInitialProps = async (
-  context: AppContext
-): Promise<AppOwnProps & AppInitialProps> => {
-  const ctx = await App.getInitialProps(context)
+// MyApp.getInitialProps = async (
+//   context: AppContext
+// ): Promise<AppOwnProps & AppInitialProps> => {
+//   const ctx = await App.getInitialProps(context)
  
-  return { ...ctx, example: 'data' }
-}
+//   return { ...ctx, example: 'data' }
+// }

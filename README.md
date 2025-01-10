@@ -19,8 +19,8 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 - **[ Video Conferencing Tool ]**: [Unlock the potential of video conferencing software development. Dive into our guide for insights on key features and cost factors.  If you're looking to integrate video communication into your app or planning to build a video streaming/conference app from scratch, create a fully customized audio & video conferencing app.]
 
 ### About the app
-
 Simple nextjs app to demo features.
+How to deploy nextjs app 
 
 ### useful links in project
 
